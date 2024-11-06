@@ -1,0 +1,202 @@
+/* Reiniciar los márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente moderna */
+    background-color: #f9f9f9; /* Fondo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #0066cc, #00bfff); /* Degradado suave de azul */
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 5px solid #00bfff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de navegación */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Estilos del botón LinkedIn */
+header button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+header button:hover {
+    background-color: #ff9900;
+    transform: translateY(-3px);
+}
+
+/* Main Section */
+main {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -5rem; /* Para darle un efecto de superposición */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.6);
+}
+
+form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
