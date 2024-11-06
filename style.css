@@ -7,15 +7,15 @@
 
 /* Estilos globales */
 body {
-    font-family: 'Poppins', sans-serif; /* Fuente moderna */
-    background-color: #f9f9f9; /* Fondo suave */
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f9f9f9; 
     color: #333;
     line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-    background: linear-gradient(135deg, #0066cc, #00bfff); /* Degradado suave de azul */
+    background: linear-gradient(135deg, #0066cc, #00bfff); 
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -105,7 +105,7 @@ main {
     padding: 3rem 1rem;
     text-align: center;
     background-color: #fff;
-    margin-top: -5rem; /* Para darle un efecto de superposición */
+    margin-top: -5rem; 
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
